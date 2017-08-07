@@ -1,0 +1,112 @@
+.question-and-answer {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 16px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:hover {
+        .question-and-answer__trash {
+            width: 40px;
+        }
+        .question-and-answer__inputs {
+            padding-right: 16px;
+        }
+    }
+
+    &__inputs {
+        display: table-cell;
+        padding: 16px 24px 24px 24px;
+        transition: padding 0.35s ease-in-out;
+    }
+
+    input.block__input,
+    textarea.block__input{
+      font-size: 16px;
+    }
+
+    &__trash {
+        border-radius: 2px;
+        box-shadow: -1px 0 0 0 #dddddd;
+        color: #999;
+        cursor: pointer;
+        display: table-cell;
+        line-height: 0;
+        overflow: hidden;
+        transition: width 0.35s ease-in-out;
+        vertical-align: middle;
+        width: 0;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__add-new-wrapper {
+        height: 16px;
+        margin: 6px 0 8px 0;
+    }
+
+    &__add-new {
+        color: #0669de;
+        float: right;
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__figure .title{
+      padding: 0 20px;
+      input{
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+
+    &__figure .markup-hints{
+      height: 12px;
+      line-height: 12px;
+      font-size: 12px;
+      margin-top: 8px;
+      color: #bbb;
+      text-align: left;
+      padding-left: 25px;
+      span{
+        margin-right: 5px;
+        &.italic{
+          font-style: italic;
+        }
+        &.bold{
+          font-weight: bold;
+        }
+      }
+    }
+
+  &__figure{
+    textarea:hover,
+    input:hover,
+    textarea:active,
+    input:active,
+    textarea:focus,
+    input:focus,
+    button:focus,
+    button:active,
+    button:hover,
+    label:focus,
+    .btn:active,
+    .btn.active
+    {
+        outline:0px !important;
+        -webkit-appearance:none;
+    }
+  }
+
+}

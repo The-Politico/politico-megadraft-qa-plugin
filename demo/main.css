@@ -1,0 +1,101 @@
+/*
+ * Copyright (c) 2016, Globo.com (https://github.com/globocom)
+ *
+ * License: MIT
+ */
+.question-and-answer {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+  .question-and-answer:first-child {
+    margin-top: 0; }
+  .question-and-answer:hover .question-and-answer__trash {
+    width: 40px; }
+  .question-and-answer:hover .question-and-answer__inputs {
+    padding-right: 16px; }
+  .question-and-answer__inputs {
+    display: table-cell;
+    padding: 16px 24px 24px 24px;
+    transition: padding 0.35s ease-in-out; }
+  .question-and-answer input.block__input,
+  .question-and-answer textarea.block__input {
+    font-size: 16px; }
+  .question-and-answer__trash {
+    border-radius: 2px;
+    box-shadow: -1px 0 0 0 #dddddd;
+    color: #999;
+    cursor: pointer;
+    display: table-cell;
+    line-height: 0;
+    overflow: hidden;
+    transition: width 0.35s ease-in-out;
+    vertical-align: middle;
+    width: 0; }
+    .question-and-answer__trash:hover {
+      color: #000; }
+  .question-and-answer__add-new-wrapper {
+    height: 16px;
+    margin: 6px 0 8px 0; }
+  .question-and-answer__add-new {
+    color: #0669de;
+    float: right;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .question-and-answer__figure .title {
+    padding: 0 20px; }
+    .question-and-answer__figure .title input {
+      font-size: 22px;
+      font-weight: bold; }
+  .question-and-answer__figure .markup-hints {
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    margin-top: 8px;
+    color: #bbb;
+    text-align: left;
+    padding-left: 25px; }
+    .question-and-answer__figure .markup-hints span {
+      margin-right: 5px; }
+      .question-and-answer__figure .markup-hints span.italic {
+        font-style: italic; }
+      .question-and-answer__figure .markup-hints span.bold {
+        font-weight: bold; }
+  .question-and-answer__figure textarea:hover,
+  .question-and-answer__figure input:hover,
+  .question-and-answer__figure textarea:active,
+  .question-and-answer__figure input:active,
+  .question-and-answer__figure textarea:focus,
+  .question-and-answer__figure input:focus,
+  .question-and-answer__figure button:focus,
+  .question-and-answer__figure button:active,
+  .question-and-answer__figure button:hover,
+  .question-and-answer__figure label:focus,
+  .question-and-answer__figure .btn:active,
+  .question-and-answer__figure .btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none; }
+
+body {
+  margin: 0; }
+
+.content {
+  font-family: Open Sans, Sans-serif; }
+  .content header {
+    background: #212121;
+    color: #fff;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    line-height: 70px; }
+    .content header h1 {
+      margin: 0;
+      font-size: 1.5em; }
+  .content .editor {
+    margin: 0 auto;
+    max-width: 960px; }
