@@ -1,6 +1,6 @@
 {
   "name": "politico-megadraft-qa-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Q & A plugin",
   "main": "lib/plugin.js",
   "style": "dist/css/plugin.css",

@@ -17,11 +17,11 @@ export default class QA extends Component {
   }
 
   handleTitleChange(event) {
-    this.props.updateQuestion(this.props.item.key, "title", event.target.value);
+    this.props.updateQuestion(this.props.item.key, "question", event.target.value);
   }
 
   handleLinkChange(event) {
-    this.props.updateQuestion(this.props.item.key, "link", event.target.value);
+    this.props.updateQuestion(this.props.item.key, "answer", event.target.value);
   }
 
   handleDeleteClick(event) {
@@ -35,11 +35,11 @@ export default class QA extends Component {
           <BlockInput
             placeholder={__("Question")}
             styles={{padding: "small", text: "big"}}
-            value={this.props.item.title}
+            value={this.props.item.question}
             onChange={this.handleTitleChange} />
           <BlockText
             placeholder={__("Answer")}
-            value={this.props.item.link}
+            value={this.props.item.answer}
             styles={{padding: "small"}}
             onChange={this.handleLinkChange} />
         </div>
