@@ -34,6 +34,5 @@ node_modules
 
 # Build files
 dist/
-lib/
 .DS_Store
 .idea/
